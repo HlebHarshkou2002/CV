@@ -80,7 +80,8 @@ Person Section
 .section--profile {
     position: fixed;
     left: 0;
-    height: 100vh;
+    height: 100%;
+    max-height: 100vh;
 
     background: linear-gradient(327deg, rgba(141, 22, 13, 0.48) 33%, rgba(0, 0, 0, 0) 80%), url(../images/person/intro-person.jpg);
     background-repeat: no-repeat;
