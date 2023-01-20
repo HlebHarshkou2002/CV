@@ -5,6 +5,11 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: Hind, "sans-serif";
+  color: #3D3D50;
+}
+
 body,
 h1,
 h2,
@@ -15,6 +20,10 @@ ul,
 ol,
 li {
   margin: 0;
+}
+
+a{
+  text-decoration: none;
 }
 
 ul {
@@ -35,15 +44,27 @@ select {
 }
 
 @font-face {
-  font-family: Hind_b;
+  font-family: Hind;
   src: url(../fonts/Hind-Bold.ttf);
   font-weight: 700;
 }
 
 @font-face {
-  font-family: Hind_m;
+  font-family: Hind;
   src: url(../fonts/Hind-Medium.ttf);
   font-weight: 500;
+}
+
+@font-face {
+  font-family: Hind;
+  src: url(../fonts/Hind-Regular.ttf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: Hind;
+  src: url(../fonts/Hind-Light.ttf);
+  font-weight: 300;
 }
 
 /*
@@ -53,7 +74,7 @@ App Styles
 */
 .container {
   width: 100%;
-  max-width: 450px;
+  max-width: 550px;
   padding: 0 15px;
   margin: 0 auto;
 }
@@ -61,15 +82,28 @@ App Styles
 .app-wrapper {
   display: flex;
   justify-content: space-between;
-  height: 2000px;
+  width: 100%;
 }
 
 .section {
-  position: absolute;
-  right: 0;
-  width: 50%;
+  width: 100%;
   height: 100vh;
 }
+
+.profile__wrapper {
+  background-color: #AE1A0F;
+  padding: 0;
+  margin: 0;
+  width: 50%;
+}
+
+.content__wrapper {
+  background-color: aqua;
+  margin: 0;
+  padding: 0;
+  width: 50%;
+}
+
 
 /*
 
@@ -80,6 +114,7 @@ Person Section
 .section--profile {
   position: fixed;
   left: 0;
+  width: 50%;
   height: 100%;
   max-height: 100vh;
   height: calc(var(--vh, 1vh) * 100);
@@ -90,36 +125,63 @@ Person Section
       rgba(141, 22, 13, 0.48) 33%,
       rgba(0, 0, 0, 0) 80%
     ),
-    url(../images/person/intro-person.jpg);
+    url(../images/person/intro-person.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  overflow: hidden;
+
+  transition: opacity 3s ease-in;
 }
 
-.person-profile__content {
-  overflow: hidden;
+.section--profile::before {
+  content: "";
+  display: block;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+      347deg,
+      rgba(112, 50, 50, 0.48) 23%,
+      rgba(0, 0, 0, 1) 60%
+    ),
+    url(../images/person/intro-person.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-blend-mode: screen;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.section--profile:hover::before{
+  opacity: 1;
+}
+
+.person-profile__inner {
   position: absolute;
   top: 70%;
   left: 50%;
   transform: translate(-50%, -50%);
+  overflow: hidden;
 }
 
 .profile__header {
   text-align: center;
-  overflow: hidden;
   margin-bottom: 20px;
 }
 
 .profile__title {
-  font-family: Hind_b, sans-serif;
-  font-size: calc(var(--index) / 0.75);
-  /* font-size: 30px; */
+  font-weight: 700;
+  font-size: calc(var(--index) / 0.8);
   text-transform: uppercase;
   color: white;
 }
 
 .profile__suptitle {
-  font-family: Hind_m, sans-serif;
+  font-weight: 500;
   color: white;
   font-size: 18px;
 }
@@ -143,7 +205,7 @@ Person Section
 }
 
 .socials__item a:hover {
-  color: blue;
+  color: black;
 }
 
 .socials__item:last-child {
@@ -157,5 +219,234 @@ About Section
 */
 
 .section--about {
-  background-color: #f2f2f2;
+  background-color: #FFF;
+}
+
+.header{
+  padding-top: 30px;
+}
+
+.nav{
+  width: 100%;
+  background-color: #AE1A0F;
+  overflow: hidden;
+}
+
+.nav__items {
+  display: flex;
+  justify-content: space-between;
+
+  padding: 0;
+}
+
+.nav__item {
+  padding: 14px 0;
+  margin: 0px 12px 0px 12px;
+}
+
+.nav__item a{
+  color: #FFF;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+/* Section Header */
+
+.section__header {
+  color: #222222;
+  padding-top: 45px;
+  margin-bottom: 35px;
+}
+
+.section__title{
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.section__title::after{
+  content: "";
+  display: block;
+  width: 100px;
+  height: 3px;
+  margin-top: 5px;
+  background-color: #AE1A0F;
+}
+
+.about__inner{
+  color: #3D3D50;
+}
+
+.about__text {
+  font-weight: 400;
+  font-size: 15px;
+  margin-bottom: 30px;
+}
+
+/* 
+
+SKILLS SECTION
+
+*/
+
+.section--skills {
+  background-color: #F2F2F2;
+}
+
+.stat{
+  font-weight: 400;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+
+.stat__item{
+  margin-bottom: 28px;
+
+}
+
+.stat__info{
+  display: flex;
+  text-align: center;
+  align-items: center;
+  flex-direction: row;
+  padding: 5px 0;
+}
+
+.stat__title {
+  margin-right: 45px;
+}
+
+.stat__percent{
+  font-size: 12px;
+  color: #FFF;
+  background-color: #AE1A0F;
+  padding: 2px 8px 0px 10px;
+  border-radius: 5px;
+}
+
+.progress-bar {
+  height: 3px;
+  width: 100%;
+}
+
+.stat--html .progress-bar {
+  background: linear-gradient(to right, #000 0% 81%, #FFF 81% 100%);
+}
+
+.stat--css .progress-bar {
+  background: linear-gradient(to right, #000 0% 63%, #FFF 63% 100%);
+}
+
+.stat--js .progress-bar {
+  background: linear-gradient(to right, #000 0% 48%, #FFF 48% 100%);
+}
+
+.stat--react .progress-bar {
+  background: linear-gradient(to right, #000 0% 40%, #FFF 40% 100%);
+}
+
+.stat--node .progress-bar {
+  background: linear-gradient(to right, #000 0% 19%, #FFF 19% 100%);
+}
+
+.stat--english .progress-bar {
+  background: linear-gradient(to right, #000 0% 40%, #FFF 40% 100%);
+}
+
+.stat--polish .progress-bar {
+  background: linear-gradient(to right, #000 0% 51%, #FFF 51% 100%);
+}
+
+
+/* 
+
+EDUCATION SECTION
+
+*/
+
+.section--education{
+  background-color: #FFF;
+}
+
+.education{
+
+}
+.institutions{
+  color: #2B2B3D;
+}
+.institutions__item {
+  margin-bottom: 22px;
+}
+.intitution__year {
+  font-weight: 400;
+  font-size: 12px;
+  color: #888888;
+
+  margin-bottom: 2px;
+}
+.intitution__name {
+  font-weight: 700;
+  font-size: 22px;
+}
+.intitution__content {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+
+  margin-bottom: 2px;
+}
+.intitution__location {
+  font-size: 15px;
+  font-weight: 300;
+}
+
+/* 
+
+INTEREST SECTION
+
+*/
+
+
+.section--interest {
+  background-color: #F2F2F2;
+}
+.interest {
+  color: #2B2B3D;
+}
+.interest__item {
+  margin-bottom: 30px;
+}
+.interest__title {
+  font-weight: 700;
+  font-size: 22px;
+}
+.interest__content {
+  font-weight: 400;
+  font-size: 15px;
+
+}
+
+/* 
+
+CONTACT SECTION
+
+*/
+
+
+.section--contact {
+  background-color: #FFF;
+  color: #3D3D50;
+}
+.contact {
+}
+.contact__item {
+  margin-bottom: 26px;
+}
+.contact__title {
+  font-weight: 700;
+  font-size: 15px;
+}
+.contact__info {
+  font-weight: 400;
+  font-size: 15px;
 }
