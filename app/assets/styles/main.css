@@ -1,0 +1,145 @@
+/* Resets */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+ol,
+li {
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Переменные */
+
+:root {
+  --index: calc(1vw + 1vh);
+}
+
+@font-face {
+  font-family: Hind_b;
+  src: url(../fonts/Hind-Bold.ttf);
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: Hind_m;
+  src: url(../fonts/Hind-Medium.ttf);
+  font-weight: 500;
+}
+
+/*
+
+App Styles
+
+*/
+.container {
+  width: 100%;
+  max-width: 450px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.app-wrapper {
+    display: flex;
+    justify-content: space-between;
+    height: 2000px;
+}
+
+.section {
+    position: absolute;
+    right: 0;
+    width: 50%;
+    height: 100vh;
+}
+
+/*
+
+Person Section
+
+*/
+
+.section--profile {
+    position: fixed;
+    left: 0;
+    height: 100vh;
+
+    background: linear-gradient(327deg, rgba(141, 22, 13, 0.48) 33%, rgba(0, 0, 0, 0) 80%), url(../images/person/intro-person.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.profile__header {
+    text-align: center;
+    margin-top: 90%;
+    margin-bottom: 20px;
+}
+
+.profile__title {
+    font-family: Hind_b, sans-serif;
+    font-size: calc(var(--index) / 0.75);
+    /* font-size: 30px; */
+    text-transform: uppercase;
+    color: white;
+}
+
+.profile__suptitle {
+  font-family: Hind_m, sans-serif;
+  color: white;
+  font-size: 18px;
+}
+
+.profile__socials {
+  font-size: calc(var(--index) / 1);
+}
+
+.profile__socials ul {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+
+.socials__item {
+  margin-right: 15px;
+}
+
+.socials__item a{
+  color: white;
+}
+
+.socials__item a:hover {
+  color: blue;
+}
+
+.socials__item:last-child {
+  margin-right: 0px;
+}
+
+/*
+
+About Section
+
+*/
+
+.section--about{
+    background-color: #f2f2f2;
+}
