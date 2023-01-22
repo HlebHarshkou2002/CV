@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="shortcut icon"
-      href="./assets/images/icons/resume-icon.png"
+      href="./assets/images/icons/resume-icon.png"  
       type="image/x-icon"
     />
 
@@ -74,10 +74,38 @@
 
       <main class="content__wrapper">
 
-        <section class="section section--about">
+        <header class="header">
+          <div class="container">
+            <nav class="nav">
+              <ul class="nav__items">
+                <li class="nav__item">
+                  <a href="#section--about" class="nav__link">About me</a>
+                </li>
+  
+                <li class="nav__item">
+                  <a href="#section--skills" class="nav__link">Skills</a>
+                </li>
+  
+                <li class="nav__item">
+                  <a href="#section--education" class="nav__link">Education</a>
+                </li>
+  
+                <li class="nav__item">
+                  <a href="#section--interest" class="nav__link">Interest</a>
+                </li>
+  
+                <li class="nav__item">
+                  <a href="#section--contact" class="nav__link">Contact</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </header>
+
+        <section class="section section--about" id="section--about">
           <div class="container">
             <div class="about-person">
-              <header class="header">
+              <!-- <header class="header">
                 <nav class="nav">
                   <ul class="nav__items">
                     <li class="nav__item">
@@ -101,9 +129,9 @@
                     </li>
                   </ul>
                 </nav>
-              </header>
+              </header> -->
 
-              <div class="section__header">
+              <div class="section__header header__about">
                 <h2 class="section__title">About me</h2>
               </div>
 
@@ -128,15 +156,19 @@
                 </div>
               </div>
 
-              <div class="slider">
-                
+              <div class="slider-about">
+                <div class="container">
+                  <div class="slider">
+
+                  </div>
+                </div>
               </div>
 
             </div>
           </div>
         </section>
 
-        <section class="section section--skills">
+        <section class="section section--skills" id="section--skills">
           <div class="container">
             <div class="section__header">
               <h2 class="section__title">Skills</h2>
@@ -295,7 +327,7 @@
           </div>
         </section>
 
-        <section class="section section--education">
+        <section class="section section--education" id="section--education">
           <div class="container">
 
             <div class="section__header">
@@ -360,7 +392,7 @@
           </div>
         </section>
 
-        <section class="section section--interest">
+        <section class="section section--interest" id="section--interest">
           <div class="container">
 
             <div class="section__header">
@@ -412,7 +444,7 @@
           </div>
         </section>
 
-        <section class="section section--contact">
+        <section class="section section--contact" id="section--contact">
           <div class="container">
 
             <div class="section__header">

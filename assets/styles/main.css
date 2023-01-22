@@ -101,8 +101,8 @@ App Styles
   /* background-color: #AE1A00; */
   padding: 0;
   margin: 0;
-  max-width: 50%;
-  min-width: 50%;
+  /* max-width: 50%;
+  min-width: 50%; */
 }
 
 .content__wrapper {
@@ -171,11 +171,36 @@ Person Section
 }
 
 .person-profile__inner {
+  display: none;
   position: absolute;
   top: 70%;
   left: 50%;
   transform: translate(-50%, -50%);
   overflow: hidden;
+  animation: person-inner-opacity-animation 1.5s ease-in;
+  /* person-inner-position-animation 1s cubic-bezier(0, 0.55, 0.45, 1) */
+
+}
+
+@keyframes person-inner-opacity-animation{
+    0%{
+      opacity: 0;
+    }
+    70%{
+      opacity: 0.6;
+    }
+    100%{
+      opacity: 1;
+    }
+}
+
+@keyframes person-inner-position-animation{
+  0%{
+    top: 85%;
+  }
+  100% {
+    top: 70%;
+  }
 }
 
 .profile__header {
@@ -224,24 +249,21 @@ Person Section
   margin-right: 0px;
 }
 
-/*
+/* 
 
-About Section
+Main Header
 
 */
 
-.section--about {
-  background-color: #FFF;
-}
-
 .header{
+  width: 100%;
   padding-top: 30px;
 }
 
 .nav{
-  max-width: 100%;
   background-color: var(--redColor);
   overflow: hidden;
+  animation: nav-opacity 1.5s ease-in;
 }
 
 .nav__items {
@@ -250,19 +272,49 @@ About Section
   padding: 0;
 }
 
-.nav__item {
-  padding: 14px 0;
-  margin: 0px 12px;
+.nav__item{
+  width: 100%;
+  text-align: center;
   max-height: 54px;
+
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.nav__item:hover {
+  background-color: #000;
 }
 
 .nav__link{
+  display: block;
   color: #FFF;
+  text-align: center;
   text-transform: uppercase;
   font-weight: 700;
   /* font-size: 16px; */
   font-size: calc(var(--index) / 1.4);
+
+  padding: 14px 12px;
   overflow: hidden;
+}
+
+@keyframes nav-opacity{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+/*
+
+About Section
+
+*/
+
+.section--about {
+  background-color: #FFF;
 }
 
 /* Section_Header */
@@ -289,15 +341,52 @@ About Section
   background-color: var(--redColor);
 }
 
+.header__about {
+  position: relative;
+  animation: about-section-opacity 1s cubic-bezier(0.64, 0, 0.78, 0), about-header-position 1s cubic-bezier(0, 0.55, 0.45, 1);
+}
+
 .about__inner{
   /* font-size: 15px; tag p*/
+  position: relative;
   font-size: calc(var(--index) / 1.3);
   font-weight: 400;
+  animation: about-section-opacity 1.5s cubic-bezier(0.64, 0, 0.78, 0), about-inner-position 1.5s cubic-bezier(0, 0.55, 0.45, 1);
 }
 
 .about__text {
   margin-bottom: 30px;
 }
+
+@keyframes about-section-opacity {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+@keyframes about-inner-position {
+  0%{
+    right: 50%;
+  }
+  100%{
+    right: 0%;
+  }
+}
+
+@keyframes about-header-position {
+  0%{
+    left: 50%;
+  }
+  100%{
+    left: 0%;
+  }
+}
+
+
+
 
 /* 
 
