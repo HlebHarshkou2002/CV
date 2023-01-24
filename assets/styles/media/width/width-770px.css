@@ -1,0 +1,68 @@
+@media screen and (max-width: 770px) {
+  .about__inner {
+    font-size: calc(var(--index) / 0.55);
+  }
+
+  /* Slider about */
+
+  .about__button::after {
+    width: calc(var(--index) / 0.6);
+    height: calc(var(--index) / 0.6);
+  }
+
+  /* 
+    
+    SKILLS SECTION
+    
+    */
+
+  .stat {
+    font-size: calc(var(--index) / 0.5);
+  }
+
+  .stat__percent {
+    font-size: calc(var(--index) / 0.7);
+  }
+
+  /* 
+    
+    EDUCATION SECTION
+    
+    */
+
+  .institutions__item {
+    text-align: center;
+    margin-bottom: calc(var(--index) / 0.3);
+  }
+
+  .intitution__year {
+    font-size: calc(var(--index) / 0.8);
+  }
+  .intitution__name {
+    font-size: calc(var(--index) / 0.4);
+  }
+  .intitution__content {
+    font-size: calc(var(--index) / 0.7);
+  }
+  .intitution__location {
+    font-size: calc(var(--index) / 0.8);
+  }
+
+  /* 
+    
+    INTEREST SECTION
+    
+    */
+
+  .interest__item {
+    text-align: center;
+    margin-bottom: calc(var(--index) / 0.3);
+  }
+  
+  .interest__title {
+    font-size: calc(var(--index) / 0.4);
+  }
+  .interest__content {
+    font-size: calc(var(--index) / 0.7);
+  }
+}

@@ -1,0 +1,133 @@
+/*
+
+Person Section
+
+*/
+
+.section--profile {
+    position: fixed;
+    left: 0;
+    max-width: 50%;
+    min-height: 100%;
+    max-height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
+    height: -webkit-fill-available;
+  
+    background: linear-gradient(
+        327deg,
+        rgba(141, 22, 13, 0.48) 33%,
+        rgba(0, 0, 0, 0) 80%
+      ),
+      url(/assets/images/person/intro-person.png);
+    
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+  
+    transition: opacity 3s ease-in;
+  }
+  
+  .section--profile::before {
+    content: "";
+    display: block;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        347deg,
+        rgba(112, 50, 50, 0.48) 23%,
+        rgba(0, 0, 0, 1) 60%
+      ),
+      url(/assets/images/person/intro-person.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: screen;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .section--profile:hover::before{
+    opacity: 1;
+  }
+  
+  .person-profile__inner {
+    display: none;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    animation: person-inner-opacity-animation 1.5s ease-in;
+  
+  }
+  
+  @keyframes person-inner-opacity-animation{
+      0%{
+        opacity: 0;
+      }
+      70%{
+        opacity: 0.6;
+      }
+      100%{
+        opacity: 1;
+      }
+  }
+  
+  @keyframes person-inner-position-animation{
+    0%{
+      top: 85%;
+    }
+    100% {
+      top: 70%;
+    }
+  }
+  
+  .profile__header {
+    text-align: center;
+    margin-bottom: 20px;
+    color: white;
+  }
+  
+  .profile__title {
+    font-weight: 700;
+    /* font-size: 36px; */
+    font-size: calc(var(--index) / 0.8);
+    text-transform: uppercase;
+  
+  }
+  
+  .profile__suptitle {
+    font-weight: 400;
+    /* font-size: 18px; */
+    font-size: calc(var(--index) / 1);
+  }
+  
+  .profile__socials {
+    font-size: calc(var(--index) / 1);
+  }
+  
+  .profile__socials ul {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+  }
+  
+  .socials__item {
+    margin-right: 15px;
+  }
+  
+  .socials__item a {
+    color: white;
+  }
+  
+  .socials__item a:hover {
+    color: black;
+  }
+  
+  .socials__item:last-child {
+    margin-right: 0px;
+  }

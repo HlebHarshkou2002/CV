@@ -1,0 +1,74 @@
+/* 
+
+SKILLS SECTION
+
+*/
+
+.section--skills {
+    background-color: #F2F2F2;
+  }
+  
+  .stat{
+    font-weight: 400;
+    /* font-size: 15px; */
+    font-size: calc(var(--index) / 1.3);
+    text-transform: uppercase;
+  }
+  
+  .stat__item{
+    margin-bottom: calc(var(--indexHeight) *4);
+  }
+  
+  .stat__info{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: row;
+    padding: 5px 0;
+  }
+  
+  .stat__title {
+    margin-right: 45px;
+  }
+  
+  .stat__percent{
+    /* font-size: 12px;  span*/
+    font-size: calc(var(--index) / 1.6);
+    color: #FFF;
+    background-color: var(--redColor);
+    padding: 2px 8px 0px 10px;
+    border-radius: 5px;
+  }
+  
+  .progress-bar {
+    height: 2px;
+    width: 100%;
+  }
+  
+  .stat--html .progress-bar {
+    background: linear-gradient(to right, #000 0% 81%, #FFF 81% 100%);
+  }
+  
+  .stat--css .progress-bar {
+    background: linear-gradient(to right, #000 0% 63%, #FFF 63% 100%);
+  }
+  
+  .stat--js .progress-bar {
+    background: linear-gradient(to right, #000 0% 48%, #FFF 48% 100%);
+  }
+  
+  .stat--react .progress-bar {
+    background: linear-gradient(to right, #000 0% 40%, #FFF 40% 100%);
+  }
+  
+  .stat--node .progress-bar {
+    background: linear-gradient(to right, #000 0% 19%, #FFF 19% 100%);
+  }
+  
+  .stat--english .progress-bar {
+    background: linear-gradient(to right, #000 0% 40%, #FFF 40% 100%);
+  }
+  
+  .stat--polish .progress-bar {
+    background: linear-gradient(to right, #000 0% 51%, #FFF 51% 100%);
+  }

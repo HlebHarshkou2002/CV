@@ -1,0 +1,40 @@
+/* Resets */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Hind, "sans-serif";
+  color: var(--accentColor);
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+ol,
+li {
+  margin: 0;
+}
+
+a{
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}

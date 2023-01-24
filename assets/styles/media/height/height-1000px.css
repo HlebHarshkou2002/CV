@@ -1,0 +1,103 @@
+/* Медиа запросы для высоты */
+
+@media screen and (min-height: 1000px) and (min-width: 1230px) {
+    /*
+  
+  About Section
+  
+  */
+  
+  .section__header {
+    margin-bottom: 55px;
+  }
+  
+  .about__inner{
+    font-size: calc(var(--index) / 1);
+    line-height: calc(var(--index) *1.5);
+  }
+  
+  .about__text {
+    margin-bottom: 35px;
+  }
+  
+  /* Slider about */
+  
+  .about__button::after {
+    width: calc(var(--index) / 0.9);
+    height: calc(var(--index) / 0.9);
+  }
+  
+  /* 
+  
+  SKILLS SECTION
+  
+  */
+  
+  .stat{
+  
+    font-size: calc(var(--index) / 0.9);
+  }
+  
+  .stat__item{
+    margin-bottom: 50px;
+  }
+  
+  .stat__title {
+    margin-right: auto;
+  }
+  
+  .stat__percent{
+    font-size: calc(var(--index) / 1);
+  }
+  
+  
+  /* 
+  
+  EDUCATION SECTION
+  
+  */
+  .institutions__item {
+    margin-bottom: calc(var(--index) / 0.6);
+  }
+  .intitution__year {
+    font-size: calc(var(--index) / 0.9);
+  }
+  .intitution__name {
+    font-size: calc(var(--index) / 0.7);
+  }
+  .intitution__content {
+  
+    font-size: calc(var(--index) / 1.1);
+    line-height: calc(var(--index) * 1.5);
+  }
+  .intitution__location {
+    font-size: calc(var(--index) / 1);
+  }
+  
+  /* 
+  
+  INTEREST SECTION
+  
+  */
+  .interest__item {
+    margin-bottom: 55px;
+  }
+  .interest__title {
+    font-size: calc(var(--index) / 0.7);
+  }
+  .interest__content {
+    font-size: calc(var(--index) / 1);
+  }
+  
+  /* 
+  
+  CONTACT SECTION
+  
+  */
+  
+  .contact__item {
+    margin-bottom: 36px;
+    font-size: calc(var(--index) / 0.9);
+  }
+  
+  }

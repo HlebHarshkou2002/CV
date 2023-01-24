@@ -1,0 +1,139 @@
+@media screen and (max-width: 575px) {
+  .profile__title {
+    font-size: calc(var(--index) / 0.4);
+  }
+
+  .profile__suptitle {
+    font-size: calc(var(--index) / 0.6);
+  }
+
+  .profile__socials {
+    font-size: calc(var(--index) / 0.7);
+  }
+
+  .socials__item {
+    margin-right: 25px;
+  }
+
+  /*
+    
+    About Section
+    
+    */
+
+  /* Section_Header */
+
+  .section__header {
+    padding-top: 35px;
+    margin-bottom: 35px;
+  }
+
+  .section__title {
+    font-size: calc(var(--index) / 0.3);
+  }
+
+  .section__title::after {
+    width: calc(var(--index) * 8);
+  }
+
+  .about__inner {
+    font-size: calc(var(--index) / 0.5);
+  }
+
+  .about__text {
+    text-align: justify;
+    margin-bottom: 15px;
+  }
+
+  .about--mobile {
+    display: block;
+  }
+
+  /* Slider about */
+
+  .slider {
+    display: none;
+  }
+
+  /* 
+    
+    SKILLS SECTION
+    
+    */
+
+  .stat {
+    font-size: calc(var(--index) / 0.4);
+  }
+
+  .stat__title {
+    margin-right: auto;
+  }
+
+  .stat__percent {
+    width: 20%;
+    font-size: calc(var(--index) / 0.4);
+  }
+
+  .progress-bar {
+    display: none;
+  }
+
+  /* 
+    
+    EDUCATION SECTION
+    
+    */
+  .institutions__item {
+    text-align: center;
+    margin-bottom: calc(var(--index) / 0.3);
+  }
+  .intitution__year {
+    font-size: calc(var(--index) / 0.8);
+    margin-bottom: 3px;
+  }
+  .intitution__name {
+    text-align: center;
+    font-size: calc(var(--index) / 0.5);
+  }
+  .intitution__content {
+    font-size: calc(var(--index) / 0.6);
+    line-height: calc(var(--index) * 2);
+    margin-bottom: 3px;
+  }
+  .intitution__location {
+    font-size: calc(var(--index) / 0.7);
+  }
+
+  /* 
+    
+    INTEREST SECTION
+    
+    */
+
+  .interest__item {
+    text-align: center;
+    margin-bottom: calc(var(--index) / 0.3);
+  }
+
+  .interest__item:last-child {
+    display: none;
+  }
+
+  .interest__title {
+    font-size: calc(var(--index) / 0.4);
+  }
+  .interest__content {
+    font-size: calc(var(--index) / 0.5);
+  }
+
+  /* 
+    
+    CONTACT SECTION
+    
+    */
+
+  .contact__item {
+    margin-bottom: 30px;
+    font-size: calc(var(--index) / 0.4);
+  }
+}

@@ -1,0 +1,22 @@
+/* 
+
+CONTACT SECTION
+
+*/
+
+.section--contact {
+  background-color: #fff;
+}
+.contact {
+}
+.contact__item {
+  margin-bottom: 26px;
+  /* font-size: 15px; */
+  font-size: calc(var(--index) / 1.3);
+}
+.contact__title {
+  font-weight: 700;
+}
+.contact__info {
+  font-weight: 400;
+}

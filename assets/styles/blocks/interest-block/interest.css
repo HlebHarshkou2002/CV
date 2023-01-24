@@ -1,0 +1,26 @@
+/* 
+
+INTEREST SECTION
+
+*/
+
+
+.section--interest {
+    background-color: #F2F2F2;
+  }
+  .interest {
+    color: var(--blueFontColor);
+  }
+  .interest__item {
+    margin-bottom: 30px;
+  }
+  .interest__title {
+    font-weight: 700;
+    /* font-size: 22px; */
+    font-size: calc(var(--index) / 0.875);
+  }
+  .interest__content {
+    font-weight: 400;
+    /* font-size: 15px; */
+    font-size: calc(var(--index) / 1.3);
+  }
