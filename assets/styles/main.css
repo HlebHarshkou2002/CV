@@ -406,24 +406,6 @@ About Section
   margin: 0 auto;
 }
 
-.slider-buttons {
-  display: flex;
-  justify-content: space-between;
-  position: absolute;
-
-  left:50%;
-  transform:translate(-50%, 0%);
-  bottom: 0;
-
-  text-align: center;
-}
-
-.about__button {
-  cursor: pointer;
-  padding: 5px;
-  margin: 5px 5px 15px;
-}
-
 .slider {
 }
 
@@ -444,6 +426,13 @@ About Section
 }
 
 .about__button {
+  position: absolute;
+  top: 50%;
+
+  cursor: pointer;
+  padding: 5px;
+  margin: 5px 5px 15px;
+
   font-size: 0;
   color: transparent;
   transform: rotateY(-50%);
@@ -462,20 +451,21 @@ About Section
 }
 
 .about__button--prev {
-  left: 0;
+  left: 10px;
   transform: rotate(-45deg);
 }
 
 .about__button--next {
-  right: 0;
+  right: 10px;
   transform: rotate(135deg);
 }
 
 .btn-prev {
-
+  
 }
 
 .btn-next{
+
 }
 
 /* 
@@ -1115,8 +1105,8 @@ About Section
 }
 
 .about__inner{
-  font-size: calc(var(--index) / 0.8);
-  line-height: calc(var(--index) *2);
+  font-size: calc(var(--index) / 1);
+  line-height: calc(var(--index) *1.5);
 }
 
 .about__text {
@@ -1126,8 +1116,8 @@ About Section
 /* Slider about */
 
 .about__button::after {
-  width: calc(var(--index) / 0.7);
-  height: calc(var(--index) / 0.7);
+  width: calc(var(--index) / 0.9);
+  height: calc(var(--index) / 0.9);
 }
 
 /* 
