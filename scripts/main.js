@@ -1,11 +1,8 @@
 
-// Profile Text Animation
-
 setTimeout(function() {
     document.querySelector('.person-profile__inner').style.display = 'block';
  }, 1500);
 
-// Main Slider
 
 const slides = document.querySelectorAll('.slide'),
       btns_prev = document.querySelectorAll('.btn-prev'),
