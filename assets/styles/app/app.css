@@ -4,39 +4,43 @@ App Styles
 
 */
 .container {
-    width: 100%;
-    max-width: 90%;
-    padding: 0 15px;
-    margin: 0 auto;
-    overflow: hidden;
-  }
-  
-  .app-wrapper {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-  }
-  
-  .section {
-    width: 100%;
-    min-height: 100vh;
-    max-height: 100vh;
-    overflow: hidden;
-  }
-  
-  .profile__wrapper {
-    /* background-color: #AE1A00; */
-    padding: 0;
-    margin: 0;
-    max-width: 50%;
-    min-width: 50%;
-    z-index: 1000;
-  }
-  
-  .content__wrapper {
-    /* background-color: aqua; */
-    margin: 0;
-    padding: 0;
-    max-width: 50%;
-    min-width: 50%;
-  }
+  width: 100%;
+  max-width: 90%;
+  padding: 0 15px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.app-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.section {
+  width: 100%;
+  min-height: 100vh;
+  max-height: 100vh;
+  overflow: hidden;
+}
+
+.profile__wrapper {
+  /* background-color: #AE1A00; */
+  padding: 0;
+  margin: 0;
+  max-width: 50%;
+  min-width: 50%;
+  z-index: 1000;
+}
+
+.content__wrapper {
+  /* background-color: aqua; */
+  margin: 0;
+  padding: 0;
+  max-width: 50%;
+  min-width: 50%;
+}
+
+.menu-icon {
+  display: none;
+}
