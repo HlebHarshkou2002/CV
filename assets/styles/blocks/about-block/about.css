@@ -100,7 +100,7 @@ Main Header
   }
   
   .about__inner{
-    /* font-size: 15px; tag p*/
+
     position: relative;
     font-size: calc(var(--index) / 1.2);
     font-weight: 400;

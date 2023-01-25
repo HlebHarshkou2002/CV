@@ -2,7 +2,7 @@
 @import url('./app/variables.css');
 @import url('./app/app.css');
 
-/* Блоки */
+
 @import url('./blocks/person-block/person.css');
 @import url('./blocks/about-block/about.css');
 @import url('./blocks/skills-block/skills.css');
@@ -11,14 +11,12 @@
 @import url('./blocks/contact-block/contact.css');
 
 
-/* Медиа запросы для ширины*/
 @import url('./media/width/width-1230px.css');
 @import url('./media/width/width-770px.css');
 @import url('./media/width/width-575px.css');
 
-/* Медиа запросы для высоты */
+
 @import url('./media/height/height-1000px.css');
 
-/* Landscape */
 
 
