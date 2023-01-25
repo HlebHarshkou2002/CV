@@ -1,7 +1,8 @@
 # CV
 ## This is my CV site specially for DataMola
 
-✅ Adaptive, responsive
-✅ Mobile version
-✅ Slider
-✅ JS
+✅ Adaptive, responsive <br>
+✅ Mobile version <br>
+✅ Slider <br>
+✅ JS <br>
+✅ Menu Burger 
